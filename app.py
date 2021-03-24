@@ -66,7 +66,7 @@ def search():
         r = requests.post('http://text-processing.com/api/sentiment/', data={'text': tweet['tweet']})
         json_response = r.json()
         tweet['label'] = json_response["label"]
-
+pwd
     return render_template('search.html', content=tweet_texts)
 
 
